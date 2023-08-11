@@ -77,8 +77,9 @@ function printButtons(category, question_num) {
     var nextrow = '';
     for (let i = 0; i < 5; i++) {
         var my_id = question_num + category[3] + i;
+        var name = question_num + category[3];
         var test = "<td><input type='radio'" + 
-             " id=" + my_id + " name=" + my_id + " value=" + my_id + "></td>";
+             " id=" + my_id + " name=" + name + " value=" + my_id + "></td>";
         nextrow = nextrow + test;
     }
     nextrow = nextrow + "</tr>"
